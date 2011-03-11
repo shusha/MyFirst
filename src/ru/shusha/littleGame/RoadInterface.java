@@ -7,6 +7,7 @@ package ru.shusha.littleGame;
  * Time: 21:33
  * To change this template use File | Settings | File Templates.
  */
+//todo make the javadoc
 public interface RoadInterface {
 
     public String getName();
