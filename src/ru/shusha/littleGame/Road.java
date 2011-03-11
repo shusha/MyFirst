@@ -9,9 +9,10 @@ import java.util.List;
  * Time: 21:47
  * To change this template use File | Settings | File Templates.
  */
+//todo make the javadoc
 public class Road implements RoadInterface {
     private List<TownInterface> towns;
-
+    //todo create body
     public String getName() {
 
         return null;  //To change body of implemented methods use File | Settings | File Templates.
