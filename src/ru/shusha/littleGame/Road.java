@@ -4,28 +4,37 @@ import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
- * User: golodnyj
- * Date: 10.03.11
- * Time: 21:47
+ * User: user
+ * Date: 12.03.11
+ * Time: 17:55
  * To change this template use File | Settings | File Templates.
  */
-//todo make the javadoc
 public class Road implements RoadInterface {
     private List<TownInterface> towns;
-    //todo create body
+    private String roadName;
+
     public String getName() {
-
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+  return this.roadName;
     }
 
-    public void setName(String s) {
-        //To change body of implemented methods use File | Settings | File Templates.
-    }
+    public void setName(String roadName) {
+       this.roadName=roadName;
 
+    }
+      /**
+       * Получает город, находящийся на втором конце дороги
+       * @param t город, в котором находимся
+       */
     public TownInterface getAnotherPoint(TownInterface t) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
-    }
+         towns.set(1,t);
+       return  towns.get(2);
 
+
+    }
+     /**
+      * Добавляет город, в который можно прийти по этой дороге
+      * @param t город, который добавится к дороге
+      */
     public void addTown(TownInterface t) throws TooManyTowns {
         if (towns.size() == 2) {
             throw new TooManyTowns("too many towns!");
@@ -33,6 +42,8 @@ public class Road implements RoadInterface {
             towns.add(t);
         }
     }
+
+
 
 
 }

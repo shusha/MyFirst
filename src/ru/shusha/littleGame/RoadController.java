@@ -2,17 +2,13 @@ package ru.shusha.littleGame;
 
 /**
  * Created by IntelliJ IDEA.
- * User: golodnyj
- * Date: 10.03.11
- * Time: 21:43
+ * User: user
+ * Date: 12.03.11
+ * Time: 17:56
  * To change this template use File | Settings | File Templates.
  */
-//todo make the javadoc
-
-
 public class RoadController {
-
-    public void createRoad(TownInterface t1, TownInterface t2, String roadName) {
+           public void createRoad(TownInterface t1, TownInterface t2, String roadName) {
         //todo  create body
-    }
+}
 }

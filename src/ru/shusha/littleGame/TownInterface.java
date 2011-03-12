@@ -4,14 +4,13 @@ import java.util.List;
 
 /**
  * Created by IntelliJ IDEA.
- * User: golodnyj
- * Date: 10.03.11
- * Time: 21:29
+ * User: user
+ * Date: 12.03.11
+ * Time: 17:59
  * To change this template use File | Settings | File Templates.
  */
 public interface TownInterface {
-
-    public String getName();
+        public String getName();
     public void setName(String s);
 
     public List<RoadInterface> getRoadList();
